@@ -1,0 +1,12 @@
+{
+  "admin": {
+    "salt": "676d5dcec0083ca0be72f37a2c31b2cf",
+    "hash": "e32fea69bace0a4deedd6154f4ea4d2bcf33d61d7cffafc714c57b2aebbb3738e39fa00bc3383d567aebf025781e06b67d6178f266265c9a3d06638f6bcad99a",
+    "role": "admin"
+  },
+  "viewer": {
+    "salt": "c323ab796493181986d5510dadcfb4f3",
+    "hash": "faef56ae5aabed5d94f4f8c7f7b086e6108170a9de886b05f6fa69df5bed182866b5eedebaead79e199367a5ae9ea1577352d2c9b2a32f93175704f9764855b4",
+    "role": "viewer"
+  }
+}

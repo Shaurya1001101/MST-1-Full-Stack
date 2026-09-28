@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Role-Based Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Login form -->
+    <section id="login-section" class="card">
+      <p> Shaurya 24BAI70716</p>
+      <h1>Login</h1>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" maxlength="30" autocomplete="off" />
+      <label for="password" class="spaced">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" maxlength="100" autocomplete="current-password" />
+      <div class="btn-row">
+        <button id="login-admin" class="btn primary">Login as Admin</button>
+        <button id="login-viewer" class="btn">Login as Viewer</button>
+      </div>
+      <p id="login-error" class="error" role="alert"></p>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard-section" class="card hidden">
+      <p> Shaurya 24BAI70716</p>
+      <header class="dash-header">
+        <h2 id="welcome"></h2>
+        <button id="logout" class="btn">Logout</button>
+      </header>
+
+      <!-- Admin only -->
+      <div id="admin-panel" class="hidden">
+        <div class="add-row">
+          <input type="text" id="post-text" placeholder="Write a new post..." maxlength="500" />
+          <button id="add-post" class="btn primary">Add Post</button>
+        </div>
+      </div>
+
+      <!-- Viewer only -->
+      <p id="readonly-note" class="readonly hidden">Read-only access</p>
+
+      <p id="dash-error" class="error" role="alert"></p>
+
+      <h3>Posts</h3>
+      <ul id="post-list" class="post-list"></ul>
+      <p id="empty" class="empty hidden">No posts yet.</p>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

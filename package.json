@@ -1,0 +1,7 @@
+{
+  "name": "role-login",
+  "version": "1.0.0",
+  "description": "Role-based login with JWT, admin/viewer dashboard",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" }
+}
